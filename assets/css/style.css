@@ -1,23 +1,35 @@
 :root{
+    /* PRIMERA PALETA
     --primary-color: #a8a8f8;
-    --background-color: #040925;
+    --background-color: #040925;*/
+    
+    /* MODO CLARO 
+    
+    --primary-color: #1B263B;
+    --background-color: #E0E1DD;*/
+
+    /* MODO OSCURO
+    */
+
+    --primary-color: #778DA9;
+    --background-color: #0D1B2A;
 }
 
 body{
     background-color: var(--background-color);
     color: var(--primary-color);
-    padding: 10px;
+    padding: 18px;
+    margin: 0px;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 section{
     margin: 20px;
     padding: 20px;
-    /* border: 1px solid var(--primary-color);
-    border-radius: 10px; */
 }
 
-img{
+#about img{
     max-width: 30%;
     height: auto;
     border-radius: 50%;
@@ -59,4 +71,35 @@ img{
     flex-wrap: wrap;
     gap: 5px 20px;
     justify-content: center;
+}
+
+#projects{
+    background-color: var(--primary-color);
+    color:  var(--background-color);
+    margin: 20px -18px;
+    padding: 20px 58px;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.proyecto{
+    flex: 1 1 calc(33% - 20px);
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    padding: 15px;         
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.proyecto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
