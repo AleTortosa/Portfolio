@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Alejandro Tortosa Dorado</h1>
-        <h2>Ingeniero Multimedia Desarrollador Web</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <div>
+            <h1>Alejandro Tortosa Dorado</h1>            
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
@@ -155,7 +159,7 @@
         </section>
 
         <section id="projects">
-            <div class="container-projects">
+            <div class="container">
                 <h1>Proyectos</h1>
                 <div class="proyectos">
                     <div class="proyecto">
@@ -191,8 +195,43 @@
 
         <section id="contact">
             <h1>Contacto</h1>
-        </section>
-            
+            <div class="contact-container">
+                <!-- Formulario -->
+                <div class="contact-form">
+                    <h2>Envíame un mensaje</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="contact-social">
+                    <h2>También me encuentras en</h2>
+                    <div class="social-links">
+                        <a href="https://github.com/AleTortosa" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-tortosa-dorado-b06651368/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:aletorta7@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i> Gmail
+                        </a>
+                    </div>
+                </div>
+            </div>
     </main>
     
     <footer>
