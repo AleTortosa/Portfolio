@@ -18,7 +18,7 @@
 body{
     background-color: var(--background-color);
     color: var(--primary-color);
-    padding: 18px;
+    padding: 0px;
     margin: 0px;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -28,7 +28,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
     position: fixed;
     background-color: var(--background-color);
     background: linear-gradient(to bottom, var(--background-color) 80%, transparent 100%);
@@ -36,6 +35,15 @@ header{
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+#menu-burguer{
+    display: none;
+}
+
+footer{
+    padding: 20px;
+    margin: 0px;
 }
 
 h2{
@@ -52,7 +60,7 @@ nav ul {
     list-style: none;
 }
 
-nav a {
+nav a, h1 a{
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
@@ -67,7 +75,7 @@ nav a:hover{
 
 section{
     margin: 20px;
-    padding: 20px;
+    padding: 20px 50px;
     scroll-margin-top: 80px;
 }
 
@@ -80,10 +88,21 @@ section{
 #about{   
     display: flex;
     gap: 20px;
+    background-color: var(--primary-color);
+    color:  var(--background-color);
+    margin: 60px 0px 20px 0px;
+    padding: 20px 70px;
 }
 
 #about > div{
     flex: 1;
+}
+
+#experience, #contact{
+    background-color: var(--primary-color);
+    color:  var(--background-color);
+    margin: 0px;
+    padding: 20px 70px;
 }
 
 .divFoto{
@@ -113,13 +132,6 @@ section{
     flex-wrap: wrap;
     gap: 5px 20px;
     justify-content: center;
-}
-
-#about, #experience, #contact{
-    background-color: var(--primary-color);
-    color:  var(--background-color);
-    margin: 20px -18px;
-    padding: 20px 58px;
 }
 
 .proyectos {
@@ -207,4 +219,78 @@ button:hover{
 
 .contact-social a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    /* Cambios de ordenador */
+
+    #menu-burguer{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: var(--background-color);
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu-movil1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-movil2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    section{
+        margin: 6px;
+        padding: 10px 6px;
+        scroll-margin-top: 140px;
+    }
+
+    #about{   
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: var(--primary-color);
+        color:  var(--background-color);
+        margin: 100px 0px 20px 0px;
+        padding: 10px 12px;
+    }
+
+    #experience, #contact{
+        background-color: var(--primary-color);
+        color:  var(--background-color);
+        margin: 0px;
+        padding: 10px 10px;
+    }
+    
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
