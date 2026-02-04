@@ -8,3 +8,8 @@ function toggleMenu() {
         x.style.display = 'none';
     }
 }
+
+function closeMenu() {
+    var x = document.getElementById('menu');
+    x.style.display = 'none';
+}

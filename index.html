@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portfolio Alejandro Tortosa</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -13,27 +13,29 @@
     <header>
         <div class="menu-movil1">
             <div>
-                <h1><a href="#about">Alejandro Tortosa Dorado</a></h1>            
+                <h1><a href="#">Alejandro Tortosa</a></h1>            
             </div>
-            <button id="menu-burguer" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div>
+                <button id="menu-burguer" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
         <div class="menu-movil2">
             <div id="menu">
                 <nav>
                     <ul>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#experience">Experiencia</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#skills" onclick="closeMenu()">Habilidades</a></li>
+                        <li><a href="#experience" onclick="closeMenu()">Experiencia</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">Proyectos</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <br><br>
+    <br>
     
     <main>
         <section id="about">
@@ -42,7 +44,7 @@
                 
             </div>
             <div>
-                <h2>Hola, soy Alejandro Tortosa</h2>
+                <h2>Hola, soy Alejandro Tortosa Dorado</h2>
                 <p>Soy un Ingeniero Multimedia con una pasión por el desarrollo web y la creación 
                     de experiencias digitales innovadoras. Mi objetivo es combinar creatividad y 
                     tecnología para ofrecer soluciones efectivas y atractivas.</p>
@@ -206,7 +208,7 @@
                 <!-- Formulario -->
                 <div class="contact-form">
                     <h3>Envíame un mensaje</h3>
-                    <form>
+                    <form action="mailto:aletorta7@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">Nombre:</label>
                             <input type="text" id="name" name="name" required>
