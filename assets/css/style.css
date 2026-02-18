@@ -1,23 +1,27 @@
 :root{
     /* PRIMERA PALETA
     --primary-color: #a8a8f8;
-    --background-color: #040925;*/
+    --background-color: #040925;
     
-    /* MODO CLARO 
+    MODO CLARO 
     
-    --primary-color: #1B263B;
-    --background-color: #E0E1DD;*/
+    --primary-color: #E0E1DD;
+    --background-color: #1B263B;*/
 
     /* MODO OSCURO
     */
 
-    --primary-color: #778DA9;
-    --background-color: #0D1B2A;
+    /*--primary-color: #778DA9;
+    --background-color: #0D1B2A;*/
+
+    --primary-color: #748CAB;
+    --dark-color: #0D1321;
+    --light-color: #F0EBD8;        
 }
 
 body{
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    background-color: var(--dark-color);
+    color: var(--light-color);
     padding: 0px;
     margin: 0px;
     font-family: 'Inter', sans-serif;
@@ -29,8 +33,8 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: var(--background-color);
-    background: linear-gradient(to bottom, var(--background-color) 80%, transparent 100%);
+    background-color: var(--dark-color);
+    background: linear-gradient(to bottom, var(--dark-color) 80%, transparent 100%);
     top: 0;
     left: 0;
     width: 100%;
@@ -63,15 +67,15 @@ nav ul {
 
 nav a, h1 a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--light-color);
     font-weight: bold;
     padding: 20px;
 }
 
 nav a:hover{
     text-decoration: underline;
-    color: var(--background-color);
-    background-color: var(--primary-color);
+    color: var(--dark-color);
+    background-color: var(--light-color);
 }
 
 section{
@@ -90,7 +94,7 @@ section{
     display: flex;
     gap: 20px;
     background-color: var(--primary-color);
-    color:  var(--background-color);
+    color: var(--dark-color);
     margin: 60px 0px 20px 0px;
     padding: 20px 70px;
 }
@@ -101,13 +105,13 @@ section{
 
 #experience, #contact{
     background-color: var(--primary-color);
-    color:  var(--background-color);
+    color:  var(--dark-color);
     margin: 0px;
     padding: 20px 70px;
 }
 
 .experiencia{
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--dark-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -124,7 +128,7 @@ section{
 
 .habilidad {
     flex: 1 1 calc(33% - 20px);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--light-color);
     border-radius: 10px;
     padding: 15px;         
     text-align: center;
@@ -149,7 +153,7 @@ section{
 
 .proyecto{
     flex: 1 1 calc(33% - 20px);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--light-color);
     border-radius: 10px;
     padding: 15px;         
     text-align: center;
@@ -175,7 +179,7 @@ label{
     display: block;
     margin-bottom: 5px;
     margin-top: 10px;
-    color: var(--background-color);
+    color: var(--dark-color);
     font-size: large;
     font-weight: bold;
 }
@@ -184,11 +188,11 @@ input, textarea{
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 3px solid var(--background-color);
+    border: 3px solid var(--dark-color);
     border-radius: 5px;
     font-size: large;
     font-weight: bold;
-    color: var(--background-color);
+    color: var(--dark-color);
     background-color: var(--primary-color);
 }
 
@@ -196,18 +200,18 @@ button{
     margin-top: 10px;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 2px solid var(--primary-color);
-    background-color: var(--background-color);
-    color: var(--primary-color);
+    border: 3px solid var(--dark-color);
+    background-color: var(--primary-color);
+    color: var(--dark-color);
     font-size: large;
     font-weight: bold;
     cursor: pointer;    
 }
 
 button:hover{
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    border: 2px solid var(--background-color);
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+    border: 3px solid var(--dark-color);
 }
 
 .social-links{
@@ -220,7 +224,7 @@ button:hover{
 }
 
 .contact-social a{
-    color: var(--background-color);
+    color: var(--dark-color);
     text-decoration: none;
 }
 
@@ -233,6 +237,13 @@ button:hover{
 
     #menu-burguer{
         display: block;
+    }
+
+    #menu-burguer:focus,
+    #menu-burguer:active{
+        background-color: var(--primary-color);
+        color: var(--dark-color);
+        outline: none;
     }
 
     #menu{
@@ -277,7 +288,7 @@ button:hover{
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        background-color: var(--background-color);
+        background-color: var(--dark-color);
         top: 0;
         left: 0;
         width: 100%;
@@ -295,14 +306,14 @@ button:hover{
         flex-direction: column;
         gap: 15px;
         background-color: var(--primary-color);
-        color:  var(--background-color);
+        color:  var(--dark-color);
         margin: 100px 0px 20px 0px;
         padding: 10px 12px;
     }
 
     #experience, #contact{
         background-color: var(--primary-color);
-        color:  var(--background-color);
+        color:  var(--dark-color);
         margin: 0px;
         padding: 10px 10px;
     }
